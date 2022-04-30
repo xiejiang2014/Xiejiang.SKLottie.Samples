@@ -7,29 +7,6 @@
 		<UseWPF>true</UseWPF>
 	</PropertyGroup>
 
-	<!--<ItemGroup>
-	  <PackageReference Include="SkiaSharp.Views.WPF" Version="2.80.3" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Reference Include="LottieLoader">
-	    <HintPath>..\SkiaSharpLottie2\SKLottie\bin\Release\net5.0\LottieLoader.dll</HintPath>
-	  </Reference>
-	  <Reference Include="MoreLinq">
-	    <HintPath>..\SkiaSharpLottie2\SKLottie\bin\Release\net5.0\MoreLinq.dll</HintPath>
-	  </Reference>
-	  <Reference Include="Xiejiang.SKLottie">
-	    <HintPath>..\SkiaSharpLottie2\SKLottie\Nuget\lib\net5.0\Xiejiang.SKLottie.dll</HintPath>
-	  </Reference>
-	  --><!--<Reference Include="Xiejiang.SKLottie">
-	    <HintPath>..\SkiaSharpLottie2\SKLottie\bin\Release\net5.0\Xiejiang.SKLottie.dll</HintPath>
-	  </Reference>--><!--
-	  <Reference Include="Xiejiang.SKLottie.Views.Wpf">
-	    <HintPath>..\SkiaSharpLottie2\SKLottie.Views.Wpf\bin\Release\net5.0-windows\Xiejiang.SKLottie.Views.Wpf.dll</HintPath>
-	  </Reference>
-	</ItemGroup>-->
-
-
 	 
 	 <ItemGroup> 
 	   <PackageReference Include="Xiejiang.SKLottie.Views.Wpf" Version="1.0.10-pre" /> 

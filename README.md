@@ -20,6 +20,16 @@ There are also some known performance issues, but they are not currently priorit
 
 Thanks for the great project CommunityToolkit/Lottie-Windows.
 
+
+演示如何使用 Xiejiang.SKLottie 在 wpf 中播放 lotte 动画.详情请见博客:
+
+https://www.cnblogs.com/8u7tgyjire7890/p/15881159.html
+
+
+
+=====================
+
+
 ![image](https://github.com/xiejiang2014/Xiejiang.SKLottie.Samples/blob/main/Gallery/%E5%8A%A8%E7%94%BB31.gif)
 
 ![image](https://github.com/xiejiang2014/Xiejiang.SKLottie.Samples/blob/main/Gallery/%E5%8A%A8%E7%94%BB33.gif)

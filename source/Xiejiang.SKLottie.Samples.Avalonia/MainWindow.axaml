@@ -1,0 +1,72 @@
+<Window xmlns = "https://github.com/avaloniaui"
+        xmlns:x = "http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d = "http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc = "http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:avalonia = "clr-namespace:Xiejiang.SKLottie.Samples.Avalonia"
+        mc:Ignorable = "d"
+        d:DesignWidth = "800"
+        d:DesignHeight = "450"
+        x:Class = "Xiejiang.SKLottie.Samples.Avalonia.MainWindow"
+        Title = "Xiejiang.SKLottie.Samples.Avalonia" >
+
+    <Grid RowDefinitions = "Auto,Auto,Auto,Auto,Auto,*" >
+
+        <StackPanel Grid.Row = "0"
+                    Orientation = "Horizontal" >
+            <Button Click = "OpenButton_Clicked" >Open</Button>
+			<Button Click = "PlayButton_Clicked" >Play</Button>
+			<Button Click = "StopButton_Clicked" >Stop</Button>
+
+        </StackPanel>
+        <StackPanel Grid.Row = "1"
+                    Orientation = "Horizontal" >
+            <TextBlock VerticalAlignment = "Center" >Frame:</TextBlock>
+            <Slider
+                Maximum = "{Binding #LottieViewer.MaxFrame}"
+                Minimum = "0"
+                SmallChange = "0.1"
+                Width = "300"
+                VerticalAlignment = "Center"
+                Value = "{Binding Path=#LottieViewer.CurrentFrame}" >
+            </Slider>
+            <TextBlock VerticalAlignment = "Center"
+                       Text = "{Binding  Path=#LottieViewer.CurrentFrame,Mode=OneWay,StringFormat=\{0:F2\}}" >
+            </TextBlock>
+        </StackPanel>
+
+        <StackPanel Grid.Row = "2"
+                    Orientation = "Horizontal" >
+            <TextBlock VerticalAlignment = "Center" >Speed:</TextBlock>
+            <Slider Maximum = "3"
+                    Minimum = "0.1"
+                    SmallChange = "0.1"
+                    Width = "300"
+                    VerticalAlignment = "Center"
+                    Value = "{Binding Path=#LottieViewer.TimeStretch}" >
+            </Slider>
+            <TextBlock VerticalAlignment = "Center"
+                       Text = "{Binding  Path=#LottieViewer.TimeStretch,Mode=OneWay,StringFormat=\{0:F2\}}" >
+            </TextBlock>
+        </StackPanel>
+
+        <StackPanel Grid.Row = "3"
+                    Orientation = "Horizontal" >
+            <TextBlock VerticalAlignment = "Center" >Scale:</TextBlock>
+            <Slider Maximum = "10"
+                    Minimum = "0.2"
+                    SmallChange = "0.1"
+                    Width = "300"
+                    VerticalAlignment = "Center"
+                    Value = "{Binding Path=#LottieViewer.Scale}" >
+            </Slider>
+            <TextBlock VerticalAlignment = "Center"
+                       Text = "{Binding  Path=#LottieViewer.Scale,Mode=OneWay,StringFormat=\{0:F2\}}" >
+            </TextBlock>
+        </StackPanel>
+
+        <avalonia:LottieViewer Grid.Row = "5"
+                               x:Name = "LottieViewer"
+                               IsPlaying = "True">
+        </avalonia:LottieViewer>
+    </Grid>
+</Window>

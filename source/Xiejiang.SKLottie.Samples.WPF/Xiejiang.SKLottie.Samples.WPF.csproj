@@ -7,9 +7,8 @@
 		<UseWPF>true</UseWPF>
 	</PropertyGroup>
 
-	 
-	 <ItemGroup> 
-	   <PackageReference Include="Xiejiang.SKLottie.Views.Wpf" Version="1.0.10-pre" /> 
-	 </ItemGroup> 
+	<ItemGroup>
+	  <PackageReference Include="Xiejiang.SKLottie.Views.Wpf" Version="1.0.10-pre" />
+	</ItemGroup> 
 
 </Project>

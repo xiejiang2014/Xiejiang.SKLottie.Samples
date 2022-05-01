@@ -1,4 +1,4 @@
-Demonstrates how to play Lottie animations in WPF using Xiejiang.SKLottie.
+Demonstrates how to play Lottie animations in WPF or Avalonia using Xiejiang.SKLottie.
 
 Nuget Packages:
 <ol>

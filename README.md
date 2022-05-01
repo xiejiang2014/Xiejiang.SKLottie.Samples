@@ -12,7 +12,7 @@ Nuget Packages:
     Use SkiaSharp.Views.Wpf to present Lottie content in WPF.
 
 </ol>
-In theory, it can support any environment where .net core3.1+ and SkiaSharp can run. But currently I only make a sample of WPF.
+In theory, it can support any environment where .net core3.1+ and SkiaSharp can run. But currently I've only made samples for WPF and Avalonia.
 
 Currently in preview, there are many features of Lottie that are not yet supported. I have selected about 200 animations at https://lottiefiles.com/, of which about 150 are supported.
 There are also some known performance issues, but they are not currently prioritized.

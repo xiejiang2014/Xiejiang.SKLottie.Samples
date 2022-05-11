@@ -14,7 +14,7 @@ Nuget Packages:
 </ol>
 In theory, it can support any environment where .net core3.1+ and SkiaSharp can run. But currently I've only made samples for WPF and Avalonia.
 
-Currently in preview, there are many features of Lottie that are not yet supported. I have selected about 200 animations at https://lottiefiles.com/, of which about 150  can be played.
+Currently in preview, there are many features of Lottie that are not yet supported. I have selected about 255 animations at https://lottiefiles.com/, of which about 193  can be played correctly.
 There are also some known performance issues, but they are not currently prioritized.
 
 

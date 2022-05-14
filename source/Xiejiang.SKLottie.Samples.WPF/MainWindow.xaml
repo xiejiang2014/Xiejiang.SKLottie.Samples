@@ -31,8 +31,8 @@
 
             <wpf:LottieViewer
                 x:Name="LottieViewer"
-                LottieFile="{Binding ElementName=ThisMainWindow,
-                                     Path=LottieFile}" />
+                Source="{Binding ElementName=ThisMainWindow,
+                                 Path=LottieFile}" />
 
             <Grid Grid.Column="1">
                 <Grid.RowDefinitions>

@@ -4,6 +4,9 @@ obj/
 
 .vs/
   
+*.nupkg
+
+
 # Nuget packages directory  
 packages/  
   

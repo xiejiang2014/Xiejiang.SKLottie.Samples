@@ -19,6 +19,9 @@ namespace Xiejiang.SKLottie.Samples.Avalonia
             RoutedEventArgs e
         )
         {
+
+            var i = 0;
+
             var result = await new OpenFileDialog()
                                {
                                    Title = "Open a Lottie json file",

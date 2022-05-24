@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>netcoreapp3.1;net5.0-windows;net6.0-windows</TargetFrameworks>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<LangVersion>latest</LangVersion>
+		<Version>1.0.15.0</Version>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="SkiaSharp.Views.WPF" Version="2.80.3" />
+		<PackageReference Include="Xiejiang.SKLottie" Version="1.0.15" />
+	</ItemGroup>
+</Project>

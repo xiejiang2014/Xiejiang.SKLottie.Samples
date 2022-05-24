@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xiejiang.SKLottie.Samples.W
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xiejiang.SKLottie.Samples.Avalonia", "Xiejiang.SKLottie.Samples.Avalonia\Xiejiang.SKLottie.Samples.Avalonia.csproj", "{CAC56143-460F-410C-9D5E-45454E702FD8}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xiejiang.SKLottie.Views.Wpf", "Xiejiang.SKLottie.Views.Wpf\Xiejiang.SKLottie.Views.Wpf.csproj", "{80AE2901-794E-4A1D-8767-5D4554538898}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CAC56143-460F-410C-9D5E-45454E702FD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAC56143-460F-410C-9D5E-45454E702FD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAC56143-460F-410C-9D5E-45454E702FD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80AE2901-794E-4A1D-8767-5D4554538898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80AE2901-794E-4A1D-8767-5D4554538898}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80AE2901-794E-4A1D-8767-5D4554538898}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80AE2901-794E-4A1D-8767-5D4554538898}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

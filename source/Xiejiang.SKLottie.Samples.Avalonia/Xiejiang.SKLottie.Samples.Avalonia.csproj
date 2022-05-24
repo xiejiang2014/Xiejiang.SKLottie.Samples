@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
@@ -27,7 +27,7 @@
   </ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Xiejiang.SKLottie" Version="1.0.4" />
+		<PackageReference Include="Xiejiang.SKLottie" Version="1.0.15" />
 	</ItemGroup>
 
 </Project>

@@ -428,8 +428,7 @@ namespace Xiejiang.SKLottie.Samples.Avalonia
         public bool HitTest
         (
             Point p
-        ) =>
-            false;
+        ) => false;
 
         public bool Equals
         (

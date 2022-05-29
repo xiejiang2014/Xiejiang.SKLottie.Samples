@@ -87,8 +87,6 @@ Thanks for the great project CommunityToolkit/Lottie-Windows.
 
 ![image](https://github.com/xiejiang2014/Xiejiang.SKLottie.Samples/blob/main/Gallery/%E5%8A%A8%E7%94%BB30.gif)
 
-![image](https://github.com/xiejiang2014/Xiejiang.SKLottie.Samples/blob/main/Gallery/%E5%8A%A8%E7%94%BB31.gif)
-
 ![image](https://github.com/xiejiang2014/Xiejiang.SKLottie.Samples/blob/main/Gallery/%E5%8A%A8%E7%94%BB32.gif)
 
 ![image](https://github.com/xiejiang2014/Xiejiang.SKLottie.Samples/blob/main/Gallery/%E5%8A%A8%E7%94%BB33.gif)

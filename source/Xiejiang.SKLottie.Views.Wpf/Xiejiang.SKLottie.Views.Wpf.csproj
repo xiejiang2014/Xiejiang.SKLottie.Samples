@@ -5,7 +5,7 @@
 		<Nullable>enable</Nullable>
 		<UseWPF>true</UseWPF>
 		<LangVersion>latest</LangVersion>
-		<Version>1.0.16.0</Version>
+		<Version>1.0.17.0</Version>
 		<Description>https://github.com/xiejiang2014/Xiejiang.SKLottie.Samples</Description>
 		<Copyright>2022 XieJiang All Rights Reserved.</Copyright>
 		<PackageProjectUrl>https://github.com/xiejiang2014/Xiejiang.SKLottie.Samples</PackageProjectUrl>
@@ -17,6 +17,6 @@
 
 	<ItemGroup>
 		<PackageReference Include="SkiaSharp.Views.WPF" Version="2.80.3" />
-		<PackageReference Include="Xiejiang.SKLottie" Version="1.0.16" />
+		<PackageReference Include="Xiejiang.SKLottie" Version="1.0.17" />
 	</ItemGroup>
 </Project>

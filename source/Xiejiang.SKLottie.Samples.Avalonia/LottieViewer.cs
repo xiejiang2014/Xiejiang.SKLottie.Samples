@@ -10,7 +10,7 @@ using Avalonia.Platform;
 using Avalonia.Rendering.SceneGraph;
 using Avalonia.Skia;
 using Avalonia.Threading;
-using Microsoft.Toolkit.Uwp.UI.Lottie.Lottie;
+using CommunityToolkit.WinUI.Lottie;
 using Xiejiang.SKLottie.Content;
 using Xiejiang.SKLottie.Drawer;
 

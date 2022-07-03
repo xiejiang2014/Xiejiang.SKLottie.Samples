@@ -252,7 +252,7 @@ namespace Xiejiang.SKLottie.Views.Wpf
                         {
                             lottieComposition = await StorageFileLoader.LoadAsync
                                                     (
-                                                     uri.AbsolutePath
+                                                     uri.OriginalString
                                                     );
                         }
                         else if (uri.Scheme.Equals
@@ -653,7 +653,8 @@ namespace Xiejiang.SKLottie.Views.Wpf
             //按照真实时间
             if (_stopwatch.IsRunning)
             {
-                if (_stopwatch.Elapsed * TimeStretch >= TimeSpan.FromSeconds
+                if (_stopwatch.Elapsed * TimeStretch >=
+                    TimeSpan.FromSeconds
                         (
                          SklLottieComposition.FrameCount / SklLottieComposition.FramesPerSecond
                         ))

@@ -5,7 +5,7 @@
 		<Nullable>enable</Nullable>
 		<UseWPF>true</UseWPF>
 		<LangVersion>latest</LangVersion>
-		<Version>1.0.19.0</Version>
+		<Version>1.0.20.0</Version>
 		<Description>https://github.com/xiejiang2014/Xiejiang.SKLottie.Samples</Description>
 		<Copyright>2022 XieJiang All Rights Reserved.</Copyright>
 		<PackageProjectUrl>https://github.com/xiejiang2014/Xiejiang.SKLottie.Samples</PackageProjectUrl>

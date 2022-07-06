@@ -8,21 +8,22 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <None Remove="Assets\LottieLogo1.json" />
+		<None Remove="Assets\LottieLogo1.json" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="Xiejiang.SKLottie.Views.Wpf" Version="1.0.20" />
+		<PackageReference Include="Xiejiang.SKLottie.Views.Wpf" Version="1.1.2" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<Resource Include="Assets\LottieLogo1.json" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Resource Include="Assets\LottieLogo1.json" />
+		<None Update="Assets\LightBulb.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
 	</ItemGroup>
-
-	<ItemGroup>
-	  <None Update="Assets\LightBulb.json">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </None>
-	</ItemGroup> 
 
 </Project>

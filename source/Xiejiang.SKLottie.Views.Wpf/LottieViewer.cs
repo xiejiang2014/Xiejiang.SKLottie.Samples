@@ -135,7 +135,7 @@ namespace Xiejiang.SKLottie.Views.Wpf
 
                 try
                 {
-                    var lottieComposition = await StorageFileLoader.LoadAsync
+                    var lottieComposition = await Loader.LoadAsync
                                                 (
                                                  newValue
                                                 );
@@ -250,7 +250,7 @@ namespace Xiejiang.SKLottie.Views.Wpf
                     {
                         if (uri.IsFile)
                         {
-                            lottieComposition = await StorageFileLoader.LoadAsync
+                            lottieComposition = await Loader.LoadAsync
                                                     (
                                                      uri.OriginalString
                                                     );
@@ -268,7 +268,7 @@ namespace Xiejiang.SKLottie.Views.Wpf
 
                             if (streamResourceInfo is not null)
                             {
-                                lottieComposition = await StorageFileLoader.LoadAsync
+                                lottieComposition = await Loader.LoadAsync
                                                         (
                                                          streamResourceInfo.Stream
                                                         );
@@ -296,7 +296,7 @@ namespace Xiejiang.SKLottie.Views.Wpf
                                  file
                                 ))
                         {
-                            lottieComposition = await StorageFileLoader.LoadAsync
+                            lottieComposition = await Loader.LoadAsync
                                                     (
                                                      file
                                                     );
@@ -322,7 +322,7 @@ namespace Xiejiang.SKLottie.Views.Wpf
 
                             if (streamResourceInfo is not null)
                             {
-                                lottieComposition = await StorageFileLoader.LoadAsync
+                                lottieComposition = await Loader.LoadAsync
                                                         (
                                                          streamResourceInfo.Stream
                                                         );

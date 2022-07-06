@@ -29,10 +29,11 @@ namespace Xiejiang.SKLottie.Samples.Avalonia
                                              {
                                                  new()
                                                  {
-                                                     Name = "Lottie json file",
+                                                     Name = "Lottie json or zip file",
                                                      Extensions = new List<string>()
                                                                   {
-                                                                      "json"
+                                                                      "json",
+                                                                      "zip"
                                                                   }
                                                  }
                                              },

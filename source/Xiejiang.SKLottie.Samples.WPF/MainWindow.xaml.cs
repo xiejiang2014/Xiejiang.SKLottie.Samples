@@ -39,14 +39,15 @@ namespace Xiejiang.SKLottie.Samples.WPF
             if (e.Data.GetData
                     (
                      DataFormats.FileDrop
-                    ) is string[] fileList && fileList.Any())
+                    ) is string[] fileList &&
+                fileList.Any())
             {
                 LottieFile = fileList.First();
             }
         }
 
 
-        private string _lottieFile;
+        private string _lottieFile = "pack://application:,,,/Assets/lottielogo1.json";
 
         public string LottieFile
         {

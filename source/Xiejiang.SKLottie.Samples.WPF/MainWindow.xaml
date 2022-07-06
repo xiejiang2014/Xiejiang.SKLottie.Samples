@@ -6,7 +6,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:wpf="clr-namespace:Xiejiang.SKLottie.Views.Wpf;assembly=Xiejiang.SKLottie.Views.Wpf"
     x:Name="ThisMainWindow"
-    Title="Xiejiang.SKLottie.Samples.WPF. Drag and drop lottie json file into this window to play it"
+    Title="Xiejiang.SKLottie.Samples.WPF. Drag and drop lottie json or zip file into this window to play it"
     AllowDrop="True"
     DragEnter="MainWindow_OnDragEnter"
     Drop="MainWindow_OnDrop"

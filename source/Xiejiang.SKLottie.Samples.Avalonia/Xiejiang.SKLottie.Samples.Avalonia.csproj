@@ -27,7 +27,7 @@
   </ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Xiejiang.SKLottie" Version="1.0.19" />
+		<PackageReference Include="Xiejiang.SKLottie" Version="1.1.1" />
 	</ItemGroup>
 
 </Project>

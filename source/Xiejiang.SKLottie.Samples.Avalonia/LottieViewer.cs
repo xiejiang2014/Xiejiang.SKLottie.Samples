@@ -118,7 +118,7 @@ namespace Xiejiang.SKLottie.Samples.Avalonia
                 }
 
 
-                StorageFileLoader.LoadAsync
+                Loader.LoadAsync
                                   (
                                    _lottieFile
                                   )

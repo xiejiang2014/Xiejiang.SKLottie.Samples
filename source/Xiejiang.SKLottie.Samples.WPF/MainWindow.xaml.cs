@@ -31,7 +31,7 @@ namespace Xiejiang.SKLottie.Samples.WPF
         }
 
 
-        private async void MainWindow_OnDrop
+        private void MainWindow_OnDrop
         (
             object        sender,
             DragEventArgs e

@@ -11,8 +11,12 @@
 		<None Remove="Assets\LottieLogo1.json" />
 	</ItemGroup>
 
-	<ItemGroup>
+	<!--<ItemGroup>
 		<PackageReference Include="Xiejiang.SKLottie.Views.Wpf" Version="1.1.2" />
+	</ItemGroup>-->
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Xiejiang.SKLottie.Views.Wpf\Xiejiang.SKLottie.Views.Wpf.csproj" />
 	</ItemGroup>
 
 

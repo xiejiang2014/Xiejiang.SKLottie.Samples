@@ -30,6 +30,7 @@
             </Grid.ColumnDefinitions>
 
             <wpf:LottieViewer
+                PlayComplete="LottieViewer_OnPlayComplete"
                 x:Name="LottieViewer"
                 Source="{Binding ElementName=ThisMainWindow,
                                  Path=LottieFile}" />

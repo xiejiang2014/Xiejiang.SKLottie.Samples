@@ -37,6 +37,31 @@ namespace Xiejiang.SKLottie.Views.Wpf
                 );
         }
 
+        #region MyRegion
+
+        public static readonly RoutedEvent PlayCompleteEvent =
+
+            EventManager.RegisterRoutedEvent("PlayComplete",
+                                             RoutingStrategy.Bubble,
+                                             typeof(RoutedEventHandler),
+                                             typeof(LottieViewer)
+                                            );
+
+        public event RoutedEventHandler PlayComplete
+        {
+            add => AddHandler(PlayCompleteEvent, value);
+            remove => RemoveHandler(PlayCompleteEvent, value);
+        }
+
+        private void RaisePlayCompleteEvent()
+        {
+            var newEventArgs = new RoutedEventArgs(PlayCompleteEvent, this);
+            RaiseEvent(newEventArgs);
+        }
+
+        #endregion
+
+
         private DrawingBuffers? _drawingBuffers;
 
         private SKElement SkElement;
@@ -417,7 +442,7 @@ namespace Xiejiang.SKLottie.Views.Wpf
         public static readonly DependencyProperty CurrentFrameProperty =
             DependencyProperty.Register
                 (
-                 "CurrentFrame",
+                 nameof(CurrentFrame),
                  typeof(double),
                  typeof(LottieViewer),
                  new PropertyMetadata
@@ -434,7 +459,6 @@ namespace Xiejiang.SKLottie.Views.Wpf
         )
         {
             if (d is LottieViewer thisLottieViewer &&
-                e.OldValue is double oldValue      &&
                 e.NewValue is double newValue)
             {
                 if (thisLottieViewer.SklLottieComposition is not null)
@@ -467,7 +491,7 @@ namespace Xiejiang.SKLottie.Views.Wpf
         public static readonly DependencyProperty ScaleProperty =
             DependencyProperty.Register
                 (
-                 "Scale",
+                 nameof(Scale),
                  typeof(float),
                  typeof(LottieViewer),
                  new PropertyMetadata
@@ -514,7 +538,7 @@ namespace Xiejiang.SKLottie.Views.Wpf
         public static readonly DependencyProperty TimeStretchProperty =
             DependencyProperty.Register
                 (
-                 "TimeStretch",
+                 nameof(TimeStretch),
                  typeof(double),
                  typeof(LottieViewer),
                  new PropertyMetadata
@@ -531,7 +555,6 @@ namespace Xiejiang.SKLottie.Views.Wpf
         )
         {
             if (d is LottieViewer thisLottieViewer &&
-                e.OldValue is double oldValue      &&
                 e.NewValue is double newValue)
             {
                 thisLottieViewer._needRendering = true;
@@ -601,7 +624,7 @@ namespace Xiejiang.SKLottie.Views.Wpf
         public static readonly DependencyProperty IsPlayingProperty =
             DependencyProperty.Register
                 (
-                 "IsPlaying",
+                 nameof(IsPlaying),
                  typeof(bool),
                  typeof(LottieViewer),
                  new PropertyMetadata
@@ -618,7 +641,6 @@ namespace Xiejiang.SKLottie.Views.Wpf
         )
         {
             if (d is LottieViewer thisLottieViewer &&
-                e.OldValue is bool oldValue        &&
                 e.NewValue is bool newValue)
             {
                 if (newValue)
@@ -660,6 +682,7 @@ namespace Xiejiang.SKLottie.Views.Wpf
                         ))
                 {
                     _stopwatch.Restart();
+                    RaisePlayCompleteEvent();
                 }
 
                 SklLottieComposition.Time = _stopwatch.Elapsed * TimeStretch;

@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows;
@@ -93,6 +94,11 @@ namespace Xiejiang.SKLottie.Samples.WPF
                       propertyName
                      )
                 );
+        }
+
+        private void LottieViewer_OnPlayComplete(object sender, RoutedEventArgs e)
+        {
+            Debug.Print("动画播放完成.");
         }
     }
 }
